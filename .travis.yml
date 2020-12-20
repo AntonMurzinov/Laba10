@@ -1,0 +1,13 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../Laba10
+  - make -j
+  - ./PolynomialTest/PolynomialTest
+notifications:
+  email: false
